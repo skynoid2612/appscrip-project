@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class = q1'>
+    <h1>Quiz: Question 1</h1>
+    <b>Who is the best cricketer in the world?</b>
+    <form action = '/question1' method = 'post'>
+        <input type="radio" name="q1" value="Sachin Tendulkar" name = q1 id = q1> Sachin Tendulkar<br>
+        <input type="radio" name="q1" value="Virat Kolli"      name = q1 id = q1> Virat Kolli<br>
+        <input type="radio" name="q1" value="Adam Gilchirst"   name = q1 id = q1> Adam Gilchirst<br>
+        <input type="radio" name="q1" value="Jacques Kallis"   name = q1 id = q1> Jacques Kallis<br>
+        <br>
+        <input type="submit" value= 'Submit'> 
+    </form>    
+</div>
+
+
+{% endblock %}

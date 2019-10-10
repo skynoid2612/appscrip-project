@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class = 'result'>
+    <form action = '/Summary', method = 'post'>
+        <h1>Quiz Summary</h1>
+        <p>Player Name:<b> {{ player_name }} </b> </p>
+        <p>Here are the answers selected:</p>
+        <p>Who is the best cricketer in the world?</p>
+        <p>Answer:<b> {{ q1 }}</b> </p>
+        <p>What are the colors in the national flag?</p>
+        <p>Answer: <b>{{ q2 }}</b></p>
+        <br>
+        <input type="submit" value= 'Finish' name="action">
+        <input type="submit" value= 'History' name="action">
+    
+    </form>
+
+
+
+</div>
+{% endblock %}

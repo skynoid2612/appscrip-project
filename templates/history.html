@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class = player_name'>
+    <h1>Quiz Result</h1>
+    <table border="1">
+        <tr>
+            <th>Player Name</th>
+            <th>Answer 1</th>
+            <th>Answer 2</th>
+            <th>Played On</th>
+        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{task.player_name}} </td>
+                <td>{{task.q1}} </td>
+                <td>{{task.q2}} </td>
+                <td>{{task.date_created}} </td>
+            </tr>
+        {% endfor %}
+        
+
+    </table>
+    <br>
+    <form action = '/history', method = 'post'>
+        <input type="submit" value= 'Finish' name="action"> Press <u>Finish</u> to restart the Game
+    </form>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class = q2'>
+    <h1>Quiz: Question 2</h1>
+    <b>What are the colors in the Indian national flag?</b>
+    <form action = '/question2' method = 'post'>
+        <div class = 'checkbox'>
+            <label><input type="checkbox" value="White"   name = 'q2'>White <br> </label>   
+            <label><input type="checkbox" value="Yellow"  name = 'q2'>Yellow<br> </label>
+            <label><input type="checkbox" value="Orange"  name = 'q2'>Orange<br> </label>
+            <label><input type="checkbox" value="Green"   name = 'q2'>Green <br> </label>
+        </div> 
+        <br>
+        <input type="submit" value= 'Submit'>    
+    </form>
+    <b>Select more than 1</b>
+<!-- 
+    <form action = '/question2' method = 'post'>
+        <input type="checkbox" value="White"  name = q2>White<br>
+        <input type="checkbox" value="Yellow" name = q2>Yellow<br>
+        <input type="checkbox" value="Orange" name = q2>Orange<br>
+        <input type="checkbox" value="Green"  name = q2>Green<br>
+        <input type="submit" value= 'Submit'> 
+    </form> 
+    <b>Select more than 1</b>
+-->     
+</div>
+
+
+{% endblock %}
